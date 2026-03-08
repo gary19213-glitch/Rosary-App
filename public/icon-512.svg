@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#312e81"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+  <!-- Cross -->
+  <rect x="226" y="60" width="60" height="200" rx="10" fill="url(#gold)"/>
+  <rect x="176" y="110" width="160" height="50" rx="10" fill="url(#gold)"/>
+  <!-- Rosary beads circle -->
+  <circle cx="256" cy="350" r="100" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <!-- Beads on circle -->
+  <circle cx="256" cy="250" r="16" fill="#fbbf24"/>
+  <circle cx="336" cy="280" r="16" fill="#fbbf24"/>
+  <circle cx="352" cy="360" r="16" fill="#fbbf24"/>
+  <circle cx="310" cy="430" r="16" fill="#fbbf24"/>
+  <circle cx="202" cy="430" r="16" fill="#fbbf24"/>
+  <circle cx="160" cy="360" r="16" fill="#fbbf24"/>
+  <circle cx="176" cy="280" r="16" fill="#fbbf24"/>
+  <!-- Extra beads -->
+  <circle cx="296" cy="258" r="12" fill="#d97706"/>
+  <circle cx="348" cy="318" r="12" fill="#d97706"/>
+  <circle cx="340" cy="400" r="12" fill="#d97706"/>
+  <circle cx="256" cy="448" r="12" fill="#d97706"/>
+  <circle cx="172" cy="400" r="12" fill="#d97706"/>
+  <circle cx="164" cy="318" r="12" fill="#d97706"/>
+  <circle cx="216" cy="258" r="12" fill="#d97706"/>
+  <!-- Center medal -->
+  <circle cx="256" cy="350" r="30" fill="#d97706" stroke="#fbbf24" stroke-width="4"/>
+  <text x="256" y="362" text-anchor="middle" fill="#1e1b4b" font-size="36" font-weight="bold">M</text>
+</svg>
