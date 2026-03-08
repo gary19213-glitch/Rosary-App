@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdf8e8;
+  --color-gold-100: #f9eec5;
+  --color-gold-200: #f3dc8b;
+  --color-gold-300: #edc84f;
+  --color-gold-400: #e6b422;
+  --color-gold-500: #c99a15;
+  --color-gold-600: #a67a0e;
+  --color-gold-700: #7d5b0b;
+  --color-gold-800: #5a4109;
+  --color-gold-900: #3d2c07;
+
+  --color-wine-50: #fdf2f4;
+  --color-wine-100: #fce7eb;
+  --color-wine-200: #f9c6d0;
+  --color-wine-300: #f49aab;
+  --color-wine-400: #ec6480;
+  --color-wine-500: #dc3558;
+  --color-wine-600: #c41d45;
+  --color-wine-700: #a31538;
+  --color-wine-800: #881533;
+  --color-wine-900: #6b1530;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1025 0%, #2d1b3d 30%, #1a1025 60%, #0f0a18 100%);
+  min-height: 100vh;
+}
+
+.prayer-text {
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+.bead {
+  transition: all 0.3s ease;
+}
+
+.bead-active {
+  filter: drop-shadow(0 0 6px rgba(230, 180, 34, 0.8));
+}
+
+.cross-glow {
+  filter: drop-shadow(0 0 8px rgba(230, 180, 34, 0.5));
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
